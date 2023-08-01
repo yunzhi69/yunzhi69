@@ -1,0 +1,7 @@
+     # Parse input from argparse into QA object
+     response = dbqa({'query': args.input})
+     end = timeit.default_timer() # End timer
+ 
+     # Print document QA response
+     print(f'\nAnswer: {response["result"]}')
+     print('='*50) # Formatting separator
