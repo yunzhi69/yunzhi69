@@ -1,0 +1,4 @@
+ int min = numbers.stream()
+                .min(Integer::compare)
+                .orElse(-1);
+        System.out.println("Min: " + min);
