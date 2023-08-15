@@ -1,0 +1,29 @@
+void TeshHashTable1()
+	{
+		int a[] = { 3,33,2,13,5,12,102 };
+		HashTable<int, int> ht;
+		for (auto& e : a)
+		{
+			ht.insert(make_pair(e, e));
+		}
+		ht.insert(make_pair(16, 16));
+		auto t = ht.Find(13);
+		if (t)
+		{
+			cout << "13" << endl;
+		}
+		else
+		{
+			cout << "13null" << endl;
+		}
+		ht.eraser(13);
+		t = ht.Find(13);
+		if (t)
+		{
+			cout << "13" << endl;
+		}
+		else
+		{
+			cout << "1" << endl;
+		}
+	}
