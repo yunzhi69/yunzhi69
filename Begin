@@ -1,0 +1,23 @@
+void jump()
+{
+
+    heroJump = true;
+    updata = true;
+
+}
+ 
+        if(updata)
+        {
+            updata = false;
+         	BeginBatchDraw(); 
+        	updataBg();
+       	 	putimagePNG2(heroX, heroY,                           	 &imgHeros[heroIndex]);
+        	FlushBatchDraw();
+     
+         	fly();
+        }
+        //Sleep(20);
+ 
+ 
+
+
