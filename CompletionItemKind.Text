@@ -1,0 +1,26 @@
+const textRange = {
+	line: _textDocumentPosition.position.line,
+	character: 0
+}
+return [
+	{
+		label: 'MinoMino',
+		kind: CompletionItemKind.Text,
+		data: 3,
+		sortText: 'b',
+		filterText: 'hello',
+		textEdit: {
+			range: {
+				start: textRange,
+				end: textRange
+			},
+			newText: 'Hello World'
+		}
+	},
+	{
+		label: 'MinoMin',
+		kind: CompletionItemKind.Text,
+		sortText: 'a',
+		filterText: 'hello'
+	}
+];
